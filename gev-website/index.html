@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Edtech Ventures | Venture Studio for Education Technology</title>
+    <meta name="description" content="Global Edtech Ventures is a venture studio building and scaling education technology solutions for European institutions. Visit us at Bett London 2026 — Stand SP40.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Global Edtech Ventures — Building the Future of Education">
+    <meta property="og:description" content="Venture studio for education technology. Portfolio includes Gridline Education, VigiExam, and NovaLearn.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://globaledtech.ventures">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gev-primary': '#1e3a5f',
+                        'gev-primary-light': '#2d4a6f',
+                        'gev-accent': '#f59e0b',
+                        'gev-accent-light': '#fbbf24',
+                        'gev-bg': '#f8fafc',
+                        'gev-text': '#1e293b',
+                        'gev-text-light': '#64748b',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.4);
+        }
+        .bett-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-gev-bg text-gev-text">
+
+    <!-- Navigation -->
+    <nav class="bg-gev-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="Logo Files/svg/White logo - no background.svg" alt="Global Edtech Ventures" class="h-10">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#portfolio" class="text-gray-300 hover:text-white transition">Portfolio</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="#bett" class="text-gray-300 hover:text-white transition">Bett 2026</a>
+                    <a href="#contact" class="btn-primary text-gev-primary px-5 py-2 rounded-full font-semibold">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-24 px-4 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-gev-accent rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-8">
+                    <span class="w-2 h-2 bg-gev-accent rounded-full mr-2 bett-pulse"></span>
+                    Meet us at Bett London 2026 — Stand SP40
+                </div>
+
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Building the Future of<br>
+                    <span class="gradient-text">Education Technology</span>
+                </h1>
+
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl">
+                    Global Edtech Ventures is a venture studio creating and scaling education technology solutions for European institutions. We combine deep EdTech expertise with operational excellence.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#portfolio" class="btn-primary text-gev-primary px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center justify-center">
+                        Explore Our Portfolio
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </a>
+                    <a href="#bett" class="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition inline-flex items-center justify-center">
+                        Visit Us at Bett
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gev-text mb-4">Our Portfolio</h2>
+                <p class="text-lg text-gev-text-light max-w-2xl mx-auto">
+                    A complete Academic Integrity Stack for European education — from infrastructure to content verification to exam security.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Gridline Education -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="h-3 bg-gradient-to-r from-slate-700 to-slate-900"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gev-text mb-2">Gridline Education</h3>
+                        <p class="text-sm text-gev-accent font-semibold mb-3">LMS Infrastructure & Security</p>
+                        <p class="text-gev-text-light mb-6">
+                            Managed hosting for Moodle and Canvas with GDPR compliance, 99.9% uptime, and 24/7 security monitoring. Financial-grade protection for your digital campus.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full">Moodle</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full">Canvas</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full">GDPR</span>
+                        </div>
+                        <a href="https://gridlineedu-j9syttkm.manus.space" target="_blank" class="text-slate-700 font-semibold hover:text-slate-900 transition inline-flex items-center">
+                            Learn more
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NovaLearn -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="h-3 bg-gradient-to-r from-teal-500 to-cyan-600"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gev-text mb-2">NovaLearn</h3>
+                        <p class="text-sm text-teal-600 font-semibold mb-3">AI Detection & EdTech Distribution</p>
+                        <p class="text-gev-text-light mb-6">
+                            UK distribution partner for world-class EdTech. Flagship product: Pangram AI detection with 99.98% accuracy and near-zero false positives.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-full">AI Detection</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-full">Pangram</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-full">UK</span>
+                        </div>
+                        <a href="https://novalearn.co.uk" target="_blank" class="text-teal-600 font-semibold hover:text-teal-800 transition inline-flex items-center">
+                            Learn more
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VigiExam -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="h-3 bg-gradient-to-r from-blue-600 to-indigo-700"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gev-text mb-2">VigiExam</h3>
+                        <p class="text-sm text-blue-600 font-semibold mb-3">Human-Audited Proctoring</p>
+                        <p class="text-gev-text-light mb-6">
+                            Live human proctoring for high-stakes assessments. 12-second response times, 99.7% uptime, and 100% human-verified results. No AI-only controversies.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Proctoring</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Human-First</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">EU</span>
+                        </div>
+                        <a href="https://vigiexam.eu" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800 transition inline-flex items-center">
+                            Learn more
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Stack -->
+            <div class="mt-16 bg-gradient-to-r from-gev-primary to-slate-800 rounded-3xl p-8 md:p-12 text-white">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">The Academic Integrity Stack</h3>
+                        <p class="text-gray-300 mb-6">
+                            Our portfolio companies work together to provide complete protection for educational institutions:
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-slate-600 rounded-lg flex items-center justify-center mr-4">
+                                    <span class="text-white font-bold text-sm">1</span>
+                                </div>
+                                <span><strong>Gridline</strong> secures your LMS infrastructure</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center mr-4">
+                                    <span class="text-white font-bold text-sm">2</span>
+                                </div>
+                                <span><strong>NovaLearn</strong> detects AI-generated content</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                                    <span class="text-white font-bold text-sm">3</span>
+                                </div>
+                                <span><strong>VigiExam</strong> verifies high-stakes assessments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-block bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                            <div class="text-5xl font-bold text-gev-accent mb-2">100%</div>
+                            <div class="text-gray-300">GDPR Compliant</div>
+                            <div class="text-gray-400 text-sm mt-1">All solutions EU-hosted</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gev-text mb-6">European Solutions for European Education</h2>
+                    <p class="text-lg text-gev-text-light mb-6">
+                        Global Edtech Ventures was founded to bridge a critical gap: world-class education technology, built for European regulatory requirements and institutional needs.
+                    </p>
+                    <p class="text-lg text-gev-text-light mb-6">
+                        Based between the US, France, and Brazil, we combine global perspective with local execution. Our operational base in São Paulo gives us access to exceptional talent, while our European entities ensure full GDPR compliance and local support.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 mt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gev-primary">3</div>
+                            <div class="text-sm text-gev-text-light">Portfolio Brands</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gev-primary">4</div>
+                            <div class="text-sm text-gev-text-light">Countries</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gev-primary">100%</div>
+                            <div class="text-sm text-gev-text-light">GDPR Focus</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gev-bg rounded-3xl p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect fill='%231e3a5f' width='80' height='80' rx='16'/%3E%3Ctext x='40' y='50' font-family='Arial' font-size='32' fill='white' text-anchor='middle'%3ELJ%3C/text%3E%3C/svg%3E" alt="Lars Janér" class="w-20 h-20 rounded-2xl mr-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-gev-text">Lars Janér</h4>
+                            <p class="text-gev-text-light">Managing Partner</p>
+                        </div>
+                    </div>
+                    <p class="text-gev-text-light mb-4">
+                        Previously Co-Founder of Educbank and founder of Learnbase, Brazil's EdTech distribution leader. 15+ years bringing education technology to emerging markets.
+                    </p>
+                    <div class="flex items-center text-sm text-gev-text-light">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        Madrid • London • São Paulo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bett Section -->
+    <section id="bett" class="py-24 px-4 bg-gev-primary text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center bg-gev-accent text-gev-primary px-4 py-2 rounded-full text-sm font-bold mb-6">
+                        <span class="w-2 h-2 bg-gev-primary rounded-full mr-2 bett-pulse"></span>
+                        BETT LONDON 2026
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Visit the Global Edtech Pavilion</h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        We're hosting a 55sqm pavilion at Bett UK 2026, showcasing our complete Academic Integrity Stack alongside our partners.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 text-gev-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Live demos of all portfolio solutions</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 text-gev-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Meet Lars Janér and the team</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 text-gev-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Exclusive Brazil EdTech Outlook 2026 report</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 text-gev-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Connect with partner companies</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary text-gev-primary px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center">
+                        Book a Meeting
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
+                        <div class="text-center mb-8">
+                            <div class="text-6xl mb-4">📍</div>
+                            <h3 class="text-2xl font-bold">Find Us</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-white/10 rounded-xl p-4 text-center">
+                                <div class="text-gev-accent text-sm uppercase tracking-wide mb-1">Stand Number</div>
+                                <div class="text-3xl font-bold">SP40</div>
+                            </div>
+                            <div class="bg-white/10 rounded-xl p-4 text-center">
+                                <div class="text-gev-accent text-sm uppercase tracking-wide mb-1">Pavilion</div>
+                                <div class="text-xl font-semibold">Global Edtech Pavilion</div>
+                                <div class="text-gray-300 text-sm">Teaching & Learning Zone</div>
+                            </div>
+                            <div class="bg-white/10 rounded-xl p-4 text-center">
+                                <div class="text-gev-accent text-sm uppercase tracking-wide mb-1">Dates</div>
+                                <div class="text-xl font-semibold">January 21-23, 2026</div>
+                                <div class="text-gray-300 text-sm">ExCeL London</div>
+                            </div>
+                            <div class="bg-white/10 rounded-xl p-4 text-center">
+                                <div class="text-gev-accent text-sm uppercase tracking-wide mb-1">Stand Size</div>
+                                <div class="text-xl font-semibold">55 sqm Island</div>
+                                <div class="text-gray-300 text-sm">4 Open Sides • Diamond Package</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section (for EdTech vendors) -->
+    <section class="py-24 px-4 bg-gev-bg">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gev-text mb-4">Partner With Us</h2>
+                <p class="text-lg text-gev-text-light max-w-2xl mx-auto">
+                    Are you an EdTech company looking to enter European or Latin American markets? We help world-class solutions reach new audiences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-gev-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-gev-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gev-text mb-3">European Market Entry</h3>
+                    <p class="text-gev-text-light mb-4">
+                        Access UK and EU markets through NovaLearn. We handle localization, compliance, sales, and support.
+                    </p>
+                    <a href="#contact" class="text-gev-primary font-semibold hover:underline">Discuss partnership →</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-gev-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-gev-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gev-text mb-3">Latin American Expansion</h3>
+                    <p class="text-gev-text-light mb-4">
+                        Enter Brazil and LATAM through Learnbase, our strategic partner with 10+ years of regional expertise.
+                    </p>
+                    <a href="#contact" class="text-gev-primary font-semibold hover:underline">Explore LATAM →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gev-text mb-4">Get in Touch</h2>
+                <p class="text-lg text-gev-text-light">
+                    Whether you're an institution looking for solutions or a company seeking distribution — let's talk.
+                </p>
+            </div>
+
+            <div class="bg-gev-bg rounded-3xl p-8 md:p-12">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gev-text mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gev-primary focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gev-text mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gev-primary focus:border-transparent transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gev-text mb-2">Company / Institution</label>
+                        <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gev-primary focus:border-transparent transition">
+                    </div>
+
+                    <div>
+                        <label for="interest" class="block text-sm font-medium text-gev-text mb-2">I'm interested in...</label>
+                        <select id="interest" name="interest" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gev-primary focus:border-transparent transition">
+                            <option value="">Select an option</option>
+                            <option value="gridline">Gridline Education (LMS Hosting)</option>
+                            <option value="novalearn">NovaLearn (AI Detection)</option>
+                            <option value="vigiexam">VigiExam (Proctoring)</option>
+                            <option value="full-stack">The Complete Academic Integrity Stack</option>
+                            <option value="partnership">Partnership / Distribution</option>
+                            <option value="bett">Meeting at Bett 2026</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gev-text mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-gev-primary focus:border-transparent transition"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn-primary w-full text-gev-primary px-8 py-4 rounded-xl font-semibold text-lg">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gev-primary text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="Logo Files/svg/White logo - no background.svg" alt="Global Edtech Ventures" class="h-12">
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Venture studio building education technology for European institutions.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Portfolio</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://gridlineedu-j9syttkm.manus.space" class="hover:text-white transition">Gridline Education</a></li>
+                        <li><a href="https://novalearn.co.uk" class="hover:text-white transition">NovaLearn</a></li>
+                        <li><a href="https://vigiexam.eu" class="hover:text-white transition">VigiExam</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#bett" class="hover:text-white transition">Bett 2026</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://linkedin.com/in/larsjanér" class="hover:text-white transition">LinkedIn</a></li>
+                        <li><a href="mailto:lars@globaledtech.ventures" class="hover:text-white transition">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 Global Edtech Ventures. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm mt-4 md:mt-0">
+                    US • France • Brazil
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
